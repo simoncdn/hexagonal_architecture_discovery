@@ -3,7 +3,7 @@ import { navigations, socialMedias } from './constants';
 import { Button } from '../ui/button';
 import { Separator } from '../ui/separator';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { IoLogIn, IoLogInOutline, IoLogOutOutline } from 'react-icons/io5';
+import { IoLogOutOutline } from 'react-icons/io5';
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -13,7 +13,7 @@ export default function Layout() {
   };
 
   return (
-    <div className={'relative flex h-screen'}>
+    <div className={'relative flex h-screen w-screen gap-4'}>
       <div className={'w-80 px-4 py-2'}>
         <ul className={'ml-4 flex flex-col gap-4 py-6'}>
           {navigations.map((nav) => (

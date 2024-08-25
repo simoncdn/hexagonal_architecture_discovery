@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Layout from '../pages/Layout';
 import Home from '../pages/Home';
+import Layout from '@/components/layout';
+import Notifications from '@/pages/Notifications';
 
 const router = createBrowserRouter([
   {
@@ -8,8 +9,14 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
+        path: 'home',
         index: true,
         element: <Home />,
+      },
+      {
+        path: 'notifications',
+        index: true,
+        element: <Notifications />,
       },
     ],
   },

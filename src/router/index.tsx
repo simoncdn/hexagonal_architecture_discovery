@@ -22,4 +22,5 @@ const router = createBrowserRouter([
   },
 ]);
 
+export type AppRouter = typeof router;
 export default router;

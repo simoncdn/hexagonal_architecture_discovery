@@ -7,7 +7,7 @@ export type PostType = {
     avatar: string;
   };
   message: string;
-  timestamp: string;
+  timestamp: Date;
   likes: number;
 };
 
@@ -20,8 +20,8 @@ export const posts: PostType[] = [
       lastName: 'Cardona',
       avatar: 'https://picsum.photos/200?random=user1',
     },
-    message: 'Hello world!',
-    timestamp: '2021-09-01T10:00:00',
+    message: 'Hello world! 23123123 1231 231',
+    timestamp: new Date('2024-08-25T22:52:00'),
     likes: 10,
   },
   {
@@ -33,7 +33,7 @@ export const posts: PostType[] = [
       avatar: 'https://picsum.photos/200?random=user2',
     },
     message: 'Hello world!',
-    timestamp: '2021-09-01T10:00:00',
+    timestamp: new Date('2024-08-25T10:52:00'),
     likes: 10,
   },
   {
@@ -45,7 +45,7 @@ export const posts: PostType[] = [
       avatar: 'https://picsum.photos/200?random=user3',
     },
     message: 'Hello world!',
-    timestamp: '2021-09-01T10:00:00',
+    timestamp: new Date('2024-08-23T10:00:00'),
     likes: 10,
   },
   {
@@ -57,7 +57,7 @@ export const posts: PostType[] = [
       avatar: 'https://picsum.photos/200?random=user1',
     },
     message: 'Hello world!',
-    timestamp: '2021-09-01T10:00:00',
+    timestamp: new Date('2024-08-20T10:00:00'),
     likes: 10,
   },
   {
@@ -69,7 +69,7 @@ export const posts: PostType[] = [
       avatar: 'https://picsum.photos/200?random=user2',
     },
     message: 'Hello world!',
-    timestamp: '2021-09-01T10:00:00',
+    timestamp: new Date('2024-07-20T10:00:00'),
     likes: 10,
   },
   {
@@ -81,7 +81,7 @@ export const posts: PostType[] = [
       avatar: 'https://picsum.photos/200?random=user3',
     },
     message: 'Hello world!',
-    timestamp: '2021-09-01T10:00:00',
+    timestamp: new Date('2024-04-20T10:00:00'),
     likes: 10,
   },
   {
@@ -93,7 +93,7 @@ export const posts: PostType[] = [
       avatar: 'https://picsum.photos/200?random=user1',
     },
     message: 'Hello world!',
-    timestamp: '2021-09-01T10:00:00',
+    timestamp: new Date('2024-02-20T10:00:00'),
     likes: 10,
   },
   {
@@ -105,7 +105,7 @@ export const posts: PostType[] = [
       avatar: 'https://picsum.photos/200?random=user2',
     },
     message: 'Hello world!',
-    timestamp: '2021-09-01T10:00:00',
+    timestamp: new Date('2024-01-20T10:00:00'),
     likes: 10,
   },
   {
@@ -117,7 +117,7 @@ export const posts: PostType[] = [
       avatar: 'https://picsum.photos/200?random=user3',
     },
     message: 'Hello world!',
-    timestamp: '2021-09-01T10:00:00',
+    timestamp: new Date('2024-01-20T10:00:00'),
     likes: 10,
   },
 ];

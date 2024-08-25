@@ -2,7 +2,7 @@ import { PostType } from '@/utils/fakePosts';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Button } from '../ui/button';
 import { IoHeartOutline } from 'react-icons/io5';
-import { getInitials } from '@/utils/utils';
+import { getInitials, timeAgo } from '@/utils/utils';
 
 type PostProps = {
   post: PostType;
@@ -24,7 +24,7 @@ export default function Post({ post }: PostProps) {
           </Avatar>
           <span>{fullName}</span>
         </div>
-        <span>{post.timestamp}</span>
+        <span>{timeAgo(post.timestamp)}</span>
       </div>
 
       <p>{post.message}</p>
